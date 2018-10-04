@@ -1,4 +1,4 @@
-import {RouterModule, Routes } from "@angular/router";
+import {RouterModule, Routes } from '@angular/router';
 
 import { PagesComponent } from './pages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -7,8 +7,8 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 
 
 
-const pagesRoutes: Routes = [ 
-    
+const pagesRoutes: Routes = [
+
     {path: '',
      component: PagesComponent,
         children : [

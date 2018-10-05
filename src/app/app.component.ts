@@ -8,7 +8,5 @@ import { SettingsService } from './services/services.index';
 })
 export class AppComponent {
 
-  constructor(public _ajustes: SettingsService) {
-
-  }
+  constructor(public _ajustes: SettingsService) { }
 }

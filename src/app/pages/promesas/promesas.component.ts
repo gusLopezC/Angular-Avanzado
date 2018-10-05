@@ -13,25 +13,27 @@ export class PromesasComponent implements OnInit {
 
   constructor() {
 
+    this.constarTres().then(
+      () => console.log('Termino')
+    ).catch(error => console.error('Error en la promesa', error));
+  }
+  ngOnInit() {
+  }
+
+  constarTres(): Promise<boolean> {
     // tslint:disable-next-line:no-shadowed-variable
-    const promesa = new Promise( (resolve, reject) => {
+    return new Promise((resolve, reject) => {
 
       let contador = 0;
       const intervalo = setInterval(() => {
         contador += 1;
         console.log(contador);
         if (contador === 3) {
-          reject('Hubo un error');
+          reject(true);
           clearInterval(intervalo);
         }
       }, 1000);
     });
-
-    promesa.then(
-      () => console.log('Termino')
-    ).catch( error => console.error('Error en la promesa', error));
-  }
-  ngOnInit() {
   }
 
 }

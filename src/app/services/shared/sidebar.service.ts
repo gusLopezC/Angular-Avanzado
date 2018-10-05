@@ -15,6 +15,7 @@ export class SidebarService {
         {titulo: 'Graficass', url: '/graficas1'},
         {titulo: 'Login', url: '/login'},
         {titulo: 'Promesas', url: '/promesas'},
+        {titulo: 'Rxjs', url: '/rxjs'},
       ]
     }
   ];
